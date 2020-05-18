@@ -5,7 +5,7 @@
 struct IGraph {
     virtual ~IGraph() {}
 
-    virtual void addEdge(int from, in to) = 0;
+    virtual void addEdge(int from, int to) = 0;
     virtual int verticesCount() const = 0;
 
     virtual std::vector<int> getNextVertices(int vertex) const = 0;
