@@ -2,7 +2,7 @@ find_package(Threads REQUIRED)
 
 include_directories(../include)
 
-file(GLOB graph_tests *.cpp)
+file(GLOB graph_tests main.cpp tests.cpp)
 
 add_executable(
         graph_tests
