@@ -1,11 +1,7 @@
 #include <arc_graph.h>
 
 void ArcGraph::addEdge(int from, int to) {
-    auto edge = std::make_pair(from, to);
-    if (std::count(_edges.begin(), _edges.end(), edge)) {
-        return;
-    }
-    _edges.push_back(edge);
+    _edges.emplace_back(from, to);
 }
 
 int ArcGraph::verticesCount() const {
